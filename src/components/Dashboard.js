@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import SweetContainer from './sweet/SweetContainer';
+import SavoryContainer from './savory/SavoryContainer';
 
 const Dashboard = () => {
   return (
-    <h2>Hola</h2>
+    <Fragment>
+      <SweetContainer />
+      <SavoryContainer />
+    </Fragment>
   );
 };
 
