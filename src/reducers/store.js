@@ -1,5 +1,4 @@
-import { createStore } from 'redux';
-import { combineReducers } from 'react-redux';
+import { createStore, combineReducers } from 'redux';
 import sweetState from './sweet';
 import savoryState from './savory';
 

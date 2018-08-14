@@ -1,11 +1,8 @@
 import uuid from 'uuid/v1';
+import defaultState from './defaultState';
 
 // Actions
 export const ADD = 'Sweet/ADD';
-
-const defaultState = {
-  sweets: []
-}
 
 // Reducer
 export default function reducer(state = defaultState, action) {
@@ -14,7 +11,7 @@ export default function reducer(state = defaultState, action) {
 
   switch (type) {
     case ADD:
-      payload.id = uuid(); 
+      payload.id = uuid(); // this ok or need fresh copy?
       return {
         ...state,
         sweets: [...state.sweets, payload]

@@ -1,11 +1,8 @@
 import uuid from 'uuid/v1';
+import defaultState from './defaultState';
 
 // Actions
 export const ADD = 'Savory/ADD';
-
-const defaultState = {
-  savories: []
-}
 
 // Reducer
 export default function reducer(state = defaultState, action) {
