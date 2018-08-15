@@ -1,7 +1,8 @@
+
 import uuid from 'uuid/v1';
 import defaultState from './defaultState';
 
-// Actions
+// Action type
 export const ADD = 'Savory/ADD';
 
 // Reducer

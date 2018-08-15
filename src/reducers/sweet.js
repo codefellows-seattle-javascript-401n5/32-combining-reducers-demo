@@ -12,6 +12,10 @@ export default function reducer(state = defaultState, action) {
   switch (type) {
     case ADD:
       payload.id = uuid(); // this ok or need fresh copy?
+
+      if(payload.name === 'twizzlers' || payload.name === 'red vines') {
+        payload.name = 'hot tamales';
+      }
       return {
         ...state,
         sweets: [...state.sweets, payload]
